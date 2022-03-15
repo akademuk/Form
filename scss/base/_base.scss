@@ -20,7 +20,7 @@
     border-radius: 0;
   &::before {
   content: "";
-  background: url(../../img/avatar.jpg);
+  background: url(../img/avatar.jpg);
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -213,9 +213,9 @@ label {
     width: 100%;
     display: flex;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: space-between;
     -webkit-justify-content: space-between;
   }
