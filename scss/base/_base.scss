@@ -13,6 +13,11 @@
   background: transparent !important;
   color: #000;
   border: none;
+  border: 2px solid black;
+    padding: 0.375rem 2.75rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0;
   &::before {
   content: "";
   background: url(../../img/avatar.jpg);
@@ -36,10 +41,6 @@
     }
   }
 }
-  
-
-
-
 form {
   background: white;
 }
@@ -144,25 +145,18 @@ label {
     padding: 0 5px;
   }
 }
-
-
-
-
-
 .form-control + label + small {
   color: red;
   opacity: 0;
   height: 0;
   transition: opacity .4s ease-out;
 }
-
 .form-control.invalid + label + small {
   opacity: 1;
   height: auto;
   margin-bottom: 20px;
   transition: opacity .4s ease-out;
 }
-
 .btn {
   border: 2px solid black;
   padding: 0.375rem 2.75rem;
@@ -170,7 +164,6 @@ label {
   font-weight: 900;
   border-radius: 0;
 }
-
 .btn:hover {
   color: white;
   background: black;
@@ -191,7 +184,6 @@ label {
   top: 36%;
   left: 10%;
 }
-
 @media screen and (max-width:1200px) {
   .label_password,
   .label_userName,
@@ -211,5 +203,32 @@ label {
   .label_userName,
   .label_email{
     left: 8%;
+  }
+  .btn_toolbar {
+    top: 25%;
+    left: 5%;
+  }
+}
+@media screen and (max-width:768px) {
+  .btn_toolbar {
+    width: 65%;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+  }
+  .btn_group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 5px 10px;
+    width: 20%;
+  }
+  .avatar_name_text {
+    &::before {
+      left: 35%;
+      top: -135%;
+    }
   }
 }

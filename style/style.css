@@ -15,6 +15,11 @@
   background: transparent !important;
   color: #000;
   border: none;
+  border: 2px solid black;
+  padding: 0.375rem 2.75rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 0;
 }
 
 .avatar_name_text::before {
@@ -218,6 +223,32 @@ label {
   .label_userName,
   .label_email {
     left: 8%;
+  }
+  .btn_toolbar {
+    top: 25%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn_toolbar {
+    width: 65%;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+  }
+  .btn_group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 5px 10px;
+    width: 20%;
+  }
+  .avatar_name_text::before {
+    left: 35%;
+    top: -135%;
   }
 }
 /*# sourceMappingURL=style.css.map */
