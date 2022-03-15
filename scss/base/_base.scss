@@ -1,0 +1,215 @@
+.header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 50px 25px;
+  align-items: center;
+}
+.avatar {
+ position: relative;
+}
+.avatar_name_text {
+  font-size: 14px;
+  background: transparent !important;
+  color: #000;
+  border: none;
+  &::before {
+  content: "";
+  background: url(../../img/avatar.jpg);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: -120%;
+  left: 35%;
+  }
+  &:hover {
+    color: #000;
+  }
+}
+.header {
+  .container {
+    .row {
+      justify-content: space-between;
+    }
+  }
+}
+  
+
+
+
+form {
+  background: white;
+}
+.form-group {
+  height: 75px;
+}
+label {
+  margin-bottom: .5rem;
+  text-align: right;
+  display: block;
+  letter-spacing: 2px;
+  color: #adb5bd;
+  text-transform: uppercase;
+}
+
+.form-control {
+  border: none;
+  background: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  transition: border-color .4s ease-out;
+  border-radius: 0;
+  position: relative;
+}
+
+.form-control:active,
+.form-control:focus,
+.btn.focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: black;
+  position: relative;
+  
+}
+
+.form-control.valid {
+  border-color: green;
+}
+#password.invalid {
+  border: 2px solid red;
+  + .label_password {
+    position: absolute;
+    top: 53%;
+    z-index: 9999;
+    background: #fff;
+    color: red;
+    padding: 0 5px;
+  }
+}
+#password.valid {
+  border: 2px solid green;
+  + .label_password {
+    position: absolute;
+    top: 53%;
+    z-index: 9999;
+    background: #fff;
+    color: green;
+    padding: 0 5px;
+  }
+}
+#username.invalid {
+  border: 2px solid red;
+  + .label_userName {
+    position: absolute;
+    top: 9%;
+    z-index: 9999;
+    background: #fff;
+    color: red;
+    padding: 0 5px;
+  }
+}
+#username.valid {
+  border: 2px solid green;
+  + .label_userName {
+    position: absolute;
+    top: 9%;
+    z-index: 9999;
+    background: #fff;
+    color: green;
+    padding: 0 5px;
+  }
+}
+#email.invalid {
+  border: 2px solid red;
+  + .label_email {
+    position: absolute;
+    top: 31%;
+    z-index: 9999;
+    background: #fff;
+    color: red;
+    padding: 0 5px;
+  }
+}
+#email.valid {
+  border: 2px solid green;
+  + .label_email {
+    position: absolute;
+    top: 31%;
+    z-index: 9999;
+    background: #fff;
+    color: green;
+    padding: 0 5px;
+  }
+}
+
+
+
+
+
+.form-control + label + small {
+  color: red;
+  opacity: 0;
+  height: 0;
+  transition: opacity .4s ease-out;
+}
+
+.form-control.invalid + label + small {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 20px;
+  transition: opacity .4s ease-out;
+}
+
+.btn {
+  border: 2px solid black;
+  padding: 0.375rem 2.75rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 0;
+}
+
+.btn:hover {
+  color: white;
+  background: black;
+  transition: all .4s ease-out;
+}
+.label_password {
+  position: absolute;
+  top: 58%;
+  left: 10%;
+}
+.label_userName {
+  position: absolute;
+  top: 14%;
+  left: 10%;
+}
+.label_email {
+  position: absolute;
+  top: 36%;
+  left: 10%;
+}
+
+@media screen and (max-width:1200px) {
+  .label_password,
+  .label_userName,
+  .label_email{
+    left: 15%;
+  }
+  .header {
+    .container {
+      .row {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}
+@media screen and (max-width:576px) {
+  .label_password,
+  .label_userName,
+  .label_email{
+    left: 8%;
+  }
+}
