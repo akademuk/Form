@@ -34,13 +34,6 @@
     color: #000;
   }
 }
-.header {
-  .container {
-    .row {
-      justify-content: space-between;
-    }
-  }
-}
 form {
   background: white;
 }
@@ -219,7 +212,12 @@ label {
   .btn_group {
     width: 100%;
     display: flex;
+    display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
   }
   .btn {
     padding: 5px 10px;
