@@ -236,9 +236,9 @@ label {
   .btn_group {
     width: 100%;
     display: flex;
-    display: -webkit-flex;
+    display: flex;
     justify-content: space-between;
-    -webkit-justify-content: space-between;
+    justify-content: space-between;
   }
   .btn {
     padding: 5px 10px;
